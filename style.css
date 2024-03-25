@@ -6,8 +6,13 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-#home-gallery > article{
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+#home-gallery > div{
+    display: flex;
+    gap: 50px;
+}
+
+#home-gallery img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
 }
