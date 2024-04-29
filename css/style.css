@@ -3,10 +3,7 @@ body {
     background-color: grey; 
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-}
+
 #home-gallery > div{
     display: flex;
     gap: 50px;
