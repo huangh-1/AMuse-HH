@@ -3,10 +3,6 @@ body {
     background-color: grey; 
 }
 
-#head > button {
-    align-items: right;
-}
-
 nav{
     display: flex;
     justify-content: space-between;
