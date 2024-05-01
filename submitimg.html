@@ -24,7 +24,38 @@
     </section>
     <!-- Settings -->
     <section>
-      <input type="radio" name="Toggle Watermark">
+      <input type="radio">
+      <label>Toggle Watermark</label>
+      <label for="watermark-type">Watermark</label>
+      <select id="watermark-type">
+        <option>Default Watermark (Center)</option>
+        <option>Default Watermark (Stretch)</option>
+        <option>Default Watermark (Tile)</option>
+        <option>Uploaded Watermark</option>
+      </select>
+      <label for="loggedusers">Logged In Users</label>
+      <select id="loggedusers">
+        <option>Full Size</option>
+        <option>Watermarked</option>
+        <option>Thumbnail</option>
+        <option>Hidden</option>
+      </select>
+      <label for="public">Public Users</label>
+      <select id="public">
+        <option>Full Size</option>
+        <option>Watermarked</option>
+        <option>Thumbnail</option>
+        <option>Hidden</option>
+      </select>
+      <br>
+      <input type="radio">
+      <label>Mark for Mature Content</label>
+      <br>
+      <label for="users">Username</label>
+      <input type="text" id="users" placeholder="Placeholder-User555">
+      <br>
+      <label for="folder-set">Folder Settings</label>
+      <a href="index.html">Home</a>
     </section>
    </div>
     <script src="js/script.js"></script>
