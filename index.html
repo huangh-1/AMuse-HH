@@ -6,51 +6,57 @@
     <title>AMuse</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="This is AMuse's description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
    <body>
     <nav>
+      <div>
       <h1>AMuse</h1>
       <h2>For Fun. For Showcase. For Passion.</h2>
+      </div>
+      <div>
       <a href="userprofile.html">Login</a>
       <a href="">Sign Up</a>
+      </div>
     </nav>
-    <section>
-      <article>
+    <section id="homebuttons">
+      <article class="share">
         <a href="submitimg.html">Share Art with Your Friends</a>
       </article>
-      <article>
-        <a href="">Develop Your Own Portfolio</a>
+      <article class="portfolio">
+        <a href="" onclick="alert('Logged In Users Only')">Develop Your Own Portfolio</a>
       </article>
-       <article>
-        <a href=""> Find Job Listings From Employers</a>
+       <article class="job">
+        <a href="">Find Job Listings From Employers</a>
        </article>
     </section>
-    <input type="search" placeholder="Search...">
+    <input class="searchbar"type="search" placeholder="Search...">
     <h2>Browse Recent Submissions</h2>
-    <section>
-      <div>
-        <a>
-          <div>
-            <img alt="Title" style="width: 341.785 px;"src=""srcset=" 2x">
+    <section id="homepagegallery">
+        <article class="gallery-container">
+          <img src="img/henrik-donnestad-ocean.jpg" alt="An acrylic painting of an ocean.">
+          <div  class="gallery-overlay">
+            <h3>Ocean</h3>
+            <a href="userprofile.html">Placeholder-User-555</a>
           </div>
-        </a>
-      </div>
-    <div>
-      <a>
-        <div>
-          <img alt="Title" style="width: 341.785 px;"src=""srcset=" 2x">
-        </div>
-      </a>
-    </div>
-    <div>
-      <a>
-        <div>
-          <img alt="Title" style="width: 341.785 px;"src=""srcset=" 2x">
-        </div>
-      </a>
-    </div>
+        </article>
+        <article class="gallery-container">
+          <img src="img/mcgill-birds.jpg" alt="An watercolor painting of two birds.">
+          <div  class="gallery-overlay">
+            <h3>Two Birds</h3>
+            <p>Placeholder-User-555</p>
+          </div>
+        </article>
+        <article class="gallery-container">
+          <img src="img/flowers.jpg" alt="An acrylic painting of flowers.">
+          <div  class="gallery-overlay">
+            <h3>Flowers</h3>
+            <p>Placeholder-User-555</p>
+          </div>
+        </article>
     </section>
-    
     <script src="js/script.js"></script>
   </body>
 </html>

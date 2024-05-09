@@ -1,16 +1,207 @@
+/* APPLIES TO ALL PAGES */
+* {
+    margin: 0; padding: 0;
+}
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: grey; 
+    font-family: 'Verdana', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #fff1e1; 
 }
-
-
-#home-gallery > div{
+h1{
+    font-family: 'Montserrat';
+}
+h2, h3 {
+    font-family: 'Inter';
+}
+/* INDEX */
+nav {
+    background-color: #FF5454;
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px;
+    align-items: end;
+}
+nav a {
+    color: #333333;
+}
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#FF5454;
+    transition: color 0.5s;
+}
+a:hover{
+    color:#663333;
+}
+section#homebuttons{
     display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+section#homebuttons article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 44px;
+    font-size: x-large;
+    text-align: center;
+}
+article.share {
+    background-image: url("../img/heartlikesmile.jpg");
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .7;
+}
+article.portfolio{
+    color: #000;
+    background-image: url("../img/portfolio.jpg");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .7;
+}
+article.job {
+    background-image: url("../img/joblistings.jpg");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .7;
+}
+section#homepagegallery {
+    display: flex; 
+    justify-content: center;
     gap: 50px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    }
+.gallery-container {
+      position: relative;
+       width: 20%;
+      height: 300px;
+    }
+@media (max-width: 600px){
+.gallery-container{
+    width: 100%;
+}
+}
+.gallery-container,.gallery-overlay p,.gallery-overlay h3{
+    text-align: center;
+}
+    
+.gallery-container img {
+width: 100%;
+height: 100%;
+object-fit: cover; }
+
+.gallery-overlay {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,.8);
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+opacity: 0;
+transition: opacity, .5s;
 }
 
-#home-gallery img {
-    width: 400px;
-    height: 500px;
+.gallery-overlay:hover {
+opacity: 1;
+}
+/* SUBMIT */
+div#submit{
+display: flex;
+align-items: center;
+width: 90%;
+margin: 30px auto;
+gap: 10px;
+}
+section#upload{
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 50%;
+}
+section#setting{
+color: #fff1e1;
+background-color: #333333;
+padding: 20px;
+margin: 20px;
+}
+input.file{
+    border: 5px #663333;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 30%;
+    align-items: center;
+}
+input.texttype{
+    display: flex;
+    padding: 5px;
+    border: 5px #333333;
+    border-radius: 10px;
+    border-style: solid;
+}
+button.submitbutton{
+    background-color: #333333;
+}
+button.submitbutton a{
+    color: #fff1e1;
+    background-color: #333333;
+    box-shadow: #000;
+}
+/* PROFILE */
+div.profile-container{
+display: flex;
+margin: 30px auto;
+width: 90%;
+gap: 30px;
+}
+section#userbio > div > img{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 50%;
+}
+div.profile {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF5454;
+    align-items: center;
+    padding: 10px;
+}
+section#userbio a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    color: #fff;
+    background-color: #333333;
+    border-radius: 10px;
+}
+section#imggalleries {
+display: flex;
+flex-direction: column;
+grid-column-end: auto;
+}
+section#imggalleries > div > img{
+display: flex;
+position: relative;
+width: 300px;
+height: 300px;
+object-fit: cover;
 }

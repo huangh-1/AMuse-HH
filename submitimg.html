@@ -6,26 +6,33 @@
     <title>Submit Artwork</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="This is AMuse's description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
    <body>
     <nav>
-      <h1>AMuse</h1>
-      <h2>For Fun. For Showcase. For Passion.</h2>
-      <a href="userprofile.html">Login</a>
-      <a href="">Sign Up</a>
+      <div>
+        <h1>AMuse</h1>
+        <h2>For Fun. For Showcase. For Passion.</h2>
+        </div>
+        <div>
+        <a href="userprofile.html">Login</a>
+        <a href="">Sign Up</a>
+        </div>
     </nav>
-   <div id="Submit">
-    <!-- Upload -->
-    <section>
-      <input type="file">
-      <input type="text" placeholder="Title">
-      <input type="text" placeholder="Blurb"> 
-      <input type="text" placeholder="Tags">
+   <div id="submit">
+    <section id="upload">
+      <input type="file" class="file">
+      <input type="text" placeholder="Title" class="texttype">
+      <input type="text" placeholder="Blurb" class="texttype"> 
+      <input type="text" placeholder="Tags" class="texttype">
+      <input type="text" placeholder="Enter Alt Text" class="texttype" required>
     </section>
-    <!-- Settings -->
-    <section>
-      <input type="radio">
+    <section id="setting">
+      <input type="checkbox">
       <label>Toggle Watermark</label>
+      <br>
       <label for="watermark-type">Watermark</label>
       <select id="watermark-type">
         <option>Default Watermark (Center)</option>
@@ -33,6 +40,7 @@
         <option>Default Watermark (Tile)</option>
         <option>Uploaded Watermark</option>
       </select>
+      <br>
       <label for="loggedusers">Logged In Users</label>
       <select id="loggedusers">
         <option>Full Size</option>
@@ -40,6 +48,7 @@
         <option>Thumbnail</option>
         <option>Hidden</option>
       </select>
+      <br>
       <label for="public">Public Users</label>
       <select id="public">
         <option>Full Size</option>
@@ -48,14 +57,32 @@
         <option>Hidden</option>
       </select>
       <br>
-      <input type="radio">
+      <input type="checkbox">
       <label>Mark for Mature Content</label>
       <br>
+      <!-- on site vs off site -->
+      <input type="radio" name="usertype"><label>On Site User</label>
+      <input type="radio" name="usertype"><label>Off Site User</label>
+      <br>
       <label for="users">Username</label>
+      <br>
       <input type="text" id="users" placeholder="Placeholder-User555">
+      <!-- add another user (button???) -->
       <br>
       <label for="folder-set">Folder Settings</label>
+      <br>
+      <!-- Gallery vs Portfolio buttons -->
+      <input type="radio" name="submissiontype"><label>Submit to User Gallery</label>
+      <br>
+      <input type="radio" name="submissiontype"><label>Submit to User Portfolio</label>
+      <details>
+        <summary></summary>
+        <input type="radio" name="foldertype" id="folder1"><label>Character Design</label>
+        <input type="radio" name="foldertype" id="folder2"><label>Environments</label>
+      </details>
       <a href="index.html">Home</a>
+      <button class="submitbutton"><a href="userprofile.html">Submit</a></button>
+      </script>
     </section>
    </div>
     <script src="js/script.js"></script>
